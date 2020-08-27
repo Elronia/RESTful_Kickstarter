@@ -1,0 +1,15 @@
+<h1>Create a New Project</h1>
+
+<%= form_for(@project) do |f| %>
+    <h3><%= f.label :title %></h3>
+    <%= f.text_field :title %><br>
+    <br>
+    <h3><%= f.label :description %></h3>
+    <%= f.text_field :description %><br>
+    <br>
+    <br>
+    <%= f.submit %>
+    <br>
+    <br>
+<% end%>
+<%= button_to("Home", projects_path, method: :get) %><br>
