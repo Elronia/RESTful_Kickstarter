@@ -23,7 +23,7 @@ class ProjectsController < ApplicationController
         # digesting the request: crompiling data for the form from the model
         @project = Project.find(params[:id])
         # response: render edit form view
-        render :edit
+        
       end
     
       # patch '/students/:id'

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/projects/new", to: "projects#new", as: "new_project"
   post "/projects", to: "projects#create"
   get "/projects/:id", to: "projects#show", as: "project"
+  get "/projects/:id/edit", to: "projects#edit"
   patch "projects/:id", to: "projects#update"
   delete "projects/:id", to: "projects#destroy"
 end
