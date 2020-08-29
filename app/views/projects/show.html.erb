@@ -1,2 +1,8 @@
 <h1><%= @project.title %></h1>
-<h2><%= @project.description %></h2>
+<h2><%= @project.description %></h2><br>
+<br>
+
+<%= button_to("Update Project", edit_project_path(@project), method: :get) %><br>
+<%= button_to("Delete Project", @project, method: :delete) %><br>
+<%= button_to("Home", projects_path, method: :get) %><br>
+
